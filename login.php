@@ -86,9 +86,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <?php } ?>
         <input type="submit" value="submit">
     </form>
-    <?php if (isset($_SESSION["statusId"]) && $_SESSION["statusId"] == 0) { ?>
-        <div style="color: red"><?php echo $loginError ?></div>
-    <?php } ?>
 </body>
 
 </html>
