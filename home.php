@@ -14,7 +14,7 @@ session_start();
 
 <body>
     <h2>Home Page</h2>
-    <?php if (isset($_SESSION['loggedin'])) { ?>
+    <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) { ?>
         <div><?php echo $_SESSION['firstName'] . ' ' . $_SESSION['lastName'] ?></div>
         <?php if (isset($_SESSION['statusId']) && $_SESSION['statusId'] == 0) { ?>
             <p>ექაუნთი არ არის გააქტიურებული <span id='resend' style='color: orange;'>გააგზავნე აქტივაციის ლინკი მეილზე</span></p>
